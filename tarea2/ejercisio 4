@@ -1,0 +1,43 @@
+import math
+
+class Punto:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+class Rectángulo:
+    def __init__(self, punto_sup_izq, punto_inf_der):
+        self.punto_sup_izq = punto_sup_izq
+        self.punto_inf_der = punto_inf_der
+
+    def calcular_perímetro(self):
+        base = abs(self.punto_inf_der.x - self.punto_sup_izq.x)
+        altura = abs(self.punto_inf_der.y - self.punto_sup_izq.y)
+        return 2 * (base + altura)
+
+    def calcular_area(self):
+        base = abs(self.punto_inf_der.x - self.punto_sup_izq.x)
+        altura = abs(self.punto_inf_der.y - self.punto_sup_izq.y)
+        return base * altura
+
+    def es_cuadrado(self):
+        base = abs(self.punto_inf_der.x - self.punto_sup_izq.x)
+        altura = abs(self.punto_inf_der.y - self.punto_sup_izq.y)
+        return base == altura
+
+
+punto_sup_izq = Punto(1, 4)
+punto_inf_der = Punto(5, 1)
+
+
+mi_rectángulo = Rectángulo(punto_sup_izq, punto_inf_der)
+
+
+print("Perímetro:", mi_rectángulo.calcular_perímetro())
+print("Área:", mi_rectángulo.calcular_area())
+
+
+if mi_rectángulo.es_cuadrado():
+    print("El rectángulo es un cuadrado.")
+else:
+    print("El rectángulo no es un cuadrado.")

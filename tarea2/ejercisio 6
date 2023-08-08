@@ -1,0 +1,22 @@
+class Carta:
+    def __init__(self, valor, pinta):
+        self.valor = valor
+        self.pinta = pinta
+
+CORAZON = "Corazón"
+DIAMANTE = "Diamante"
+TREBOL = "Trébol"
+PICA = "Pica"
+
+carta1 = Carta("As", CORAZON)
+carta2 = Carta("Rey", DIAMANTE)
+carta3 = Carta("10", TREBOL)
+
+print("Carta 1: Valor =", carta1.valor, "- Pinta =", carta1.pinta)
+print("Carta 2: Valor =", carta2.valor, "- Pinta =", carta2.pinta)
+print("Carta 3: Valor =", carta3.valor, "- Pinta =", carta3.pinta)
+
+
+
+
+

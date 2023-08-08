@@ -1,0 +1,3 @@
+celsius = int(input("ingrese grados celsius\n"))
+fahrenheit = ((9* celsius) / 5) + 32
+print(celsius, "grados celsius equivalen a:", fahrenheit,"fahrenheits")

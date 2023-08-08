@@ -1,0 +1,20 @@
+def suma(x,y):
+    resultado = x+y
+    return resultado
+def resta(x,y):
+    resultado = x-y
+    return resultado
+def multiplicacion(x,y):
+    resultado = x*y
+    return resultado
+def divicion(x,y):
+    resultado = x/y
+    return resultado
+
+num1= int(input("Ingrese primer numero\n"))
+num2= int(input("Ingrese segundo numero\n"))
+opperacion1= suma(num1,num2)
+operacion2= resta(num1, num2)
+operacion3= multiplicacion(num1, num2)
+operacion4 = divicion(num1, num2)
+print("su sumatoria es:", opperacion1, "su resta es:",operacion2,"su multiplicacion es:", operacion3,"su divicion es:", operacion4)

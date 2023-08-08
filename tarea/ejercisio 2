@@ -1,0 +1,9 @@
+radio = float(input("ingrese radio\n"))
+def area (radio):
+    radio = radio * radio
+    total = radio * 3,1416
+    return total
+        
+resultado = area (radio)
+print("El area del circulo es:", resultado)
+

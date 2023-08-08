@@ -1,0 +1,17 @@
+class Punto:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+punto1 = Punto(3, 5)
+punto2 = Punto(-2, 7)
+
+
+print("Coordenadas del punto 1:", punto1.x, punto1.y)
+print("Coordenadas del punto 2:", punto2.x, punto2.y)
+
+
+
+
+

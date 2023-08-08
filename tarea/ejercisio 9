@@ -1,0 +1,11 @@
+import random
+matriz = []
+fila = []
+filas = random.randint(1,7)
+columnas = random.randint(1,7)
+for i in range (0, filas):
+    fila = []
+    for j in range(0, columnas):
+        fila.append(random.randint(1,10))
+        matriz.append(fila)
+print(matriz)

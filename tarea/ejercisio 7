@@ -1,0 +1,17 @@
+import random
+resultado =[]
+num = int(input("¿Cuantos numeros quiere que tenga su lista?\n"))
+mayor = 0
+
+for i in range(1, num + 1):
+    numero = (random.randint(1, 100))
+    resultado.append(numero) 
+    if numero >= mayor:
+        mayor = numero
+menor = resultado[0]
+for i in resultado:
+    if i <= menor:
+        menor = i
+print(resultado)
+print("el numero mayor es:", mayor)
+print("el numero menor es:",menor)
